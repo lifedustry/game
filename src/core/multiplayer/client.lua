@@ -1,8 +1,8 @@
 local client = {}
 local enet = require("enet")
-local map = require("src.map")
-local player = require("src.player")
-local protocol = require("src.multiplayer.protocol")
+local map = require("src.core.map")
+local player = require("src.core.player")
+local protocol = require("engine.protocol")
 
 function protocol.decode(str)
     local tbl = {}

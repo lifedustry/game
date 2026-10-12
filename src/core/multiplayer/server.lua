@@ -1,4 +1,4 @@
-local protol = require("src.multiplayer.protocol")
+local protol = require("engine.protocol")
 local enet = require "enet"
 
 -- set the server

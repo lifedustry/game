@@ -1,8 +1,8 @@
-local screen = require("src.display.screen")
-local ui = require("src.display.ui")
-local gui = require("src.display.gui")
-local SceneManager = require("src.scene_manager")
-local assets = require("src.assets")
+local screen = require("engine.screen")
+local ui = require("engine.ui")
+local gui = require("engine.gui")
+local SceneManager = require("engine.scene_manager")
+local assets = require("engine.assets")
 
 local gameover = {}
 

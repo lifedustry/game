@@ -1,10 +1,10 @@
-local SceneManager = require("src.scene_manager")
-local assets = require("src.assets")
-local dev = require("src.core.dev")
-local screen = require("src.display.screen")
-local gui = require("src.display.gui")
-local args = require("src.args")
-local locales = require("src.locales")
+local SceneManager = require("engine.scene_manager")
+local assets = require("engine.assets")
+local dev = require("src.core.system.dev")
+local screen = require("engine.screen")
+local gui = require("engine.gui")
+local args = require("src.core.system.args")
+local locales = require("engine.locales")
 
 ---@type boolean
 _G.DEV = false -- set devmode by default ex for android if u want dev mode enable here

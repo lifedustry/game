@@ -1,10 +1,10 @@
-local assets = require("src.assets")
+local assets = require("engine.assets")
 local keys = require("src.data.keys")
-local SceneManager = require("src.scene_manager")
-local screen = require("src.display.screen")
-local inventory = require("src.inventory")
+local SceneManager = require("engine.scene_manager")
+local screen = require("engine.screen")
+local inventory = require("engine.inventory")
 local items = require("src.data.items")
-local time = require("src.time")
+local time = require("src.core.time")
 local player = {}
 
 player.speed = 500

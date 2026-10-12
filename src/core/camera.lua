@@ -1,8 +1,8 @@
-local screen = require("src.display.screen")
-local lmath = require("src.core.math")
-local map = require("src.map")
-local player = require("src.player")
-local mobs = require("src.mobs")
+local screen = require("engine.screen")
+local lmath = require("engine.math")
+local map = require("src.core.map")
+local player = require("src.core.player")
+local mobs = require("engine.mobs")
 local keys = require("src.data.keys")
 local camera = {}
 

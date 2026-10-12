@@ -1,7 +1,7 @@
-local screen = require("src.display.screen")
-local assets = require("src.assets")
-local ui = require("src.display.ui")
-local gui = require("src.display.gui")
+local screen = require("engine.screen")
+local assets = require("engine.assets")
+local ui = require("engine.ui")
+local gui = require("engine.gui")
 
 local test = {}
 

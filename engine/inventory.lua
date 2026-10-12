@@ -1,5 +1,5 @@
-local assets = require("src.assets")
-local screen = require("src.display.screen")
+local assets = require("engine.assets")
+local screen = require("engine.screen")
 local items = require("src.data.items")
 
 local inventory = {}

@@ -23,8 +23,8 @@ function SceneManager.load()
     SceneManager.current = SceneManager.current or "loading"
 
     for _, subdir in ipairs(SCENE_DIRS) do
-        local path = subdir == "" and "src/scenes" or ("src/scenes/" .. subdir)
-        local req_prefix = subdir == "" and "src.scenes." or ("src.scenes." .. subdir .. ".")
+        local path = subdir == "" and "src/core/scenes" or ("src/core/scenes/" .. subdir)
+        local req_prefix = subdir == "" and "src.core.scenes." or ("src.core.scenes." .. subdir .. ".")
 
         for _, filename in ipairs(love.filesystem.getDirectoryItems(path)) do
             local name = filename:match("(.+)%.lua$")

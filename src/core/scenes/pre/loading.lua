@@ -1,8 +1,8 @@
-local screen = require("src.display.screen")
-local assets = require("src.assets")
-local ui = require("src.display.ui")
-local SceneManager = require("src.scene_manager")
-local args = require("src.args")
+local screen = require("engine.screen")
+local assets = require("engine.assets")
+local ui = require("engine.ui")
+local SceneManager = require("engine.scene_manager")
+local args = require("src.core.system.args")
 
 
 local loading = {}

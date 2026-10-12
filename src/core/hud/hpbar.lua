@@ -1,6 +1,6 @@
-local player = require("src.player")
-local screen = require("src.display.screen")
-local ui = require("src.display.ui")
+local player = require("src.core.player")
+local screen = require("engine.screen")
+local ui = require("engine.ui")
 local hpbar = {}
 
 

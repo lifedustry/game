@@ -1,7 +1,7 @@
-local assets = require("src.assets")
+local assets = require("engine.assets")
 local items = require("src.data.items")
-local screen = require("src.display.screen")
-local inventory = require("src.inventory")
+local screen = require("engine.screen")
+local inventory = require("engine.inventory")
 local itemType = require("src.data.itemType")
 local hotbar = {}
 

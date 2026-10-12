@@ -1,13 +1,13 @@
-local assets = require("src.assets")
+local assets = require("engine.assets")
 
 local items = {
     rock = {
         name = "rock",
         isConsumable = true,
         onUse = function(x, y)
-        	local mobs = require("src.mobs")
-            local camera = require("src.camera")
-            local screen = require("src.display.screen")
+        	local mobs = require("engine.mobs")
+            local camera = require("src.core.camera")
+            local screen = require("engine.screen")
             mobs.create({x = (x + camera.x) - screen.width / 2, y = (y + camera.y) - screen.height / 2, name = "rock", type = "item"})
         end
     },
@@ -41,9 +41,9 @@ local items = {
         type = "custom",
         isConsumable = false,
         onUse = function(x, y)
-        	local mobs = require("src.mobs")
-            local camera = require("src.camera")
-            local screen = require("src.display.screen")
+        	local mobs = require("engine.mobs")
+            local camera = require("src.core.camera")
+            local screen = require("engine.screen")
             mobs.create({x = (x + camera.x) - screen.width / 2, y = (y + camera.y) - screen.height / 2, type = "snowman"})
         end
         },
@@ -62,9 +62,9 @@ local items = {
         onUse = function(x, y)
         	assets.audios.sfx.crunch:stop()
         	assets.audios.sfx.crunch:play()
-            local player = require("src.player")
-            local screen = require("src.display.screen")
-            local camera = require("src.camera")
+            local player = require("src.core.player")
+            local screen = require("engine.screen")
+            local camera = require("src.core.camera")
             player.x = player.x + ((screen.mouse.x - (screen.width / 2)) / camera.zoom)
             player.y = player.y + ((screen.mouse.y - (screen.height / 2)) / camera.zoom)
         end
@@ -76,8 +76,8 @@ local items = {
         onUse = function(x, y)
             assets.audios.sfx.swing:stop()
             assets.audios.sfx.swing:play()
-            local mobs = require("src.mobs")
-            local player = require("src.player")
+            local mobs = require("engine.mobs")
+            local player = require("src.core.player")
             for id, mob in ipairs(mobs.list) do
                 local dx = mobs.list[id].x - player.x
                 local dy = mobs.list[id].y - player.y

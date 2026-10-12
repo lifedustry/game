@@ -1,4 +1,4 @@
-local assets = require("src.assets")
+local assets = require("engine.assets")
 
 ---@class BlockDef
 ---@field name    string

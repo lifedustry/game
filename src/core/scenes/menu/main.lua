@@ -1,8 +1,8 @@
-local screen = require("src.display.screen")
-local assets = require("src.assets")
-local gui = require("src.display.gui")
-local ui = require("src.display.ui")
-local SceneManager = require("src.scene_manager")
+local screen = require("engine.screen")
+local assets = require("engine.assets")
+local gui = require("engine.gui")
+local ui = require("engine.ui")
+local SceneManager = require("engine.scene_manager")
 local funfact = require("src.data.funfact")
 
 

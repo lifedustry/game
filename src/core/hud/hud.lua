@@ -1,5 +1,5 @@
-local hotbar = require("src.hotbar")
-local hpbar = require("src.hpbar")
+local hotbar = require("src.core.hud.hotbar")
+local hpbar = require("src.core.hud.hpbar")
 
 local hud = {}
 

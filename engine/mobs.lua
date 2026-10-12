@@ -1,12 +1,12 @@
-local assets = require("src.assets")
+local assets = require("engine.assets")
 local items = require("src.data.items")
-local ui = require("src.display.ui")
-local lmath = require("src.core.math")
-local player = require("src.player")
-local screen = require("src.display.screen")
-local inventory = require("src.inventory")
+local ui = require("engine.ui")
+local lmath = require("engine.math")
+local player = require("src.core.player")
+local screen = require("engine.screen")
+local inventory = require("engine.inventory")
 local entities = require("src.data.entities")
-local time = require("src.time")
+local time = require("src.core.time")
 
 ---@class Mob
 ---@field x        number
@@ -82,7 +82,7 @@ end
 
 
 function mobs.update(dt)
-    local camera = require("src.camera")
+    local camera = require("src.core.camera")
     for i, mob in ipairs(mobs.list) do
         if mob.x > ((0 - (screen.width / camera.zoom)/2) + camera.x)
         and mob.x < (((screen.width / camera.zoom)/2) + camera.x)
@@ -109,7 +109,7 @@ end
 
 
 function mobs.draw()
-    local camera = require("src.camera")
+    local camera = require("src.core.camera")
     for _, mob in ipairs(mobs.list) do
         if mob.x > ((0 - (screen.width / camera.zoom)/2) + camera.x)
         and mob.x < (((screen.width / camera.zoom)/2) + camera.x)

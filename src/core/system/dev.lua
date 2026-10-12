@@ -1,11 +1,11 @@
-local player = require("src.player")
-local mobs = require("src.mobs")
-local screen = require("src.display.screen")
-local camera = require("src.camera")
-local SceneManager = require("src.scene_manager")
+local player = require("src.core.player")
+local mobs = require("engine.mobs")
+local screen = require("engine.screen")
+local camera = require("src.core.camera")
+local SceneManager = require("engine.scene_manager")
 local keys = require("src.data.keys")
-local time = require("src.time")
-local map = require("src.map")
+local time = require("src.core.time")
+local map = require("src.core.map")
 local dev = {}
 
 --- Dev mode: prints a notice and disables VSync for raw FPS.

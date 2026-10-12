@@ -1,5 +1,5 @@
 -- chance that these will be rewritten on UI update.
-local screen = require("src.display.screen")
+local screen = require("engine.screen")
 local ui = {}
 
 --- Draws `text` centred on (`x`, `y`).

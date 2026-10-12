@@ -1,10 +1,10 @@
-local screen = require("src.display.screen")
-local ui = require("src.display.ui")
-local gui = require("src.display.gui")
-local SceneManager = require("src.scene_manager")
-local assets = require("src.assets")
-local map = require("src.map")
-local client = require("src.multiplayer.client")
+local screen = require("engine.screen")
+local ui = require("engine.ui")
+local gui = require("engine.gui")
+local SceneManager = require("engine.scene_manager")
+local assets = require("engine.assets")
+local map = require("src.core.map")
+local client = require("src.core.multiplayer.client")
 
 local play_online = {}
 

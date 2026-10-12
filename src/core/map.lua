@@ -1,10 +1,10 @@
 local biomes = require("src.data.biomes")
 local blocks = require("src.data.blocks")
-local screen = require("src.display.screen")
-local mobs = require("src.mobs")
-local assets = require("src.assets")
-local player = require("src.player")
-local time = require("src.time")
+local screen = require("engine.screen")
+local mobs = require("engine.mobs")
+local assets = require("engine.assets")
+local player = require("src.core.player")
+local time = require("src.core.time")
 
 local map = {}
 

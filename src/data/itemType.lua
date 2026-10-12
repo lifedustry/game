@@ -2,9 +2,9 @@ local items = require("src.data.items")
 local itemType = {
     stat = {
         onUse = function(item)
-            local player = require("src.player")
-            local inventory = require("src.inventory")
-            local assets = require("src.assets")
+            local player = require("src.core.player")
+            local inventory = require("engine.inventory")
+            local assets = require("engine.assets")
 
             stat = items[inventory.list[inventory.selected].name].stat
             amount = items[inventory.list[inventory.selected].name].amount
@@ -16,10 +16,10 @@ local itemType = {
     },
     block = {
         onUse = function(item)
-            local map = require("src.map")
+            local map = require("src.core.map")
             local blocks = require("src.data.blocks")
-            local camera = require("src.camera")
-            local screen = require("src.display.screen")
+            local camera = require("src.core.camera")
+            local screen = require("engine.screen")
             
 
             local world_x = (screen.mouse.x - screen.width / 2) / camera.zoom + camera.x
